@@ -13,7 +13,7 @@ from telegram import Bot
 TOKEN_BOT = os.environ.get("TOKEN_BOT", "")
 CHAT_ID = os.environ.get("CHAT_ID", "")
 
-cap = VideoCaptureThread(camera='rtsp://admin:GWOSPK@192.168.1.146:554/h264')
+cap = VideoCaptureThread(camera='rtsp://admin:password@IPcamera:554/h264')
 
 # cap = cv2.VideoCapture('rtsp://admin:GWOSPK@192.168.1.50:554/h264')
 process_this_frame: bool = True
